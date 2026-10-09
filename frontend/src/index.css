@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-forest: #1b4332;
+    --color-forest-light: #2d6a4f;
+    --color-sage: #52b788;
+    --color-sage-light: #d8f3dc;
+    --color-cream: #fbfbdf;
+    --color-cream-card: #ffffff;
+    --color-earth: #6c584c;
+    --color-terracotta: #e07a5f;
+    --color-sunshine: #f4a261;
+  }
+
+  body {
+    background-color: #f7f9f6;
+    color: #1c2826;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+  }
+}
+
+/* Custom Nature Theme Utilities */
+.bg-forest { background-color: #1b4332; }
+.bg-forest-dark { background-color: #112d22; }
+.bg-sage { background-color: #52b788; }
+.bg-sage-light { background-color: #eaf8ed; }
+.bg-cream { background-color: #faf9f5; }
+.bg-earth { background-color: #6c584c; }
+
+.text-forest { color: #1b4332; }
+.text-forest-light { color: #2d6a4f; }
+.text-sage { color: #38a37f; }
+.text-earth { color: #6c584c; }
+
+.border-sage { border-color: #b7e4c7; }
+.border-forest { border-color: #2d6a4f; }
+
+.gradient-hero {
+  background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 60%, #40916c 100%);
+}
+
+.gradient-card {
+  background: linear-gradient(180deg, #ffffff 0%, #f7faf7 100%);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(82, 183, 136, 0.2);
+}
